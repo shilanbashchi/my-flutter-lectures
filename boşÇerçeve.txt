@@ -1,0 +1,32 @@
+// Önce material kütüphanesini projemize dâhil ediyoruz:
+import 'package:flutter/material.dart';
+
+/* Sonra ana bloğumuzu açıp runApp yapısı ile uygulamamızı çalıştırıyoruz: */
+void main() => runApp(MyApp());
+
+/* Bir stateless widget ile MyApp ismini verdiğimiz uygulamamızı oluşturuyoruz ve MaterialApp isimli üst çatı widget'ımızı döndürüyoruz. MaterialApp'in home parametresini kullanarak da AnaEkran isimli ana ekranımızı tutacak başka bir widget çağırıyoruz. */
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "Uygulama Çerçevesi",
+      home: AnaEkran(),
+    );
+  }
+}
+
+/* Bir başka stateless widget ile AnaEkran isimli widget'ımızı oluşturuyoruz. İçinde AppBar'ı ve ana ekranı tutan bir Scaffold (İskele) widget döndürüyoruz. Scaffold widget'ımızın body parametresi ile de boş bir container döndürüyoruz. */
+class AnaEkran extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("SelfTeach ilk çerçevem"),
+      ),
+      body: Container(child: Center(
+      child: Text("merhaba kullanıcı"),
+      ),
+      ),
+    );
+  }
+}
