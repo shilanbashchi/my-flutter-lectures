@@ -1,0 +1,35 @@
+ //FONKSİYONLAR
+//ÖNEMLİ NOT : eğer fonksiyonu void main içinde tanımlayacaksak önce fonksiyonu tanımlayıp ondan sonra fonksiyonu çağırmalı /kullanmalıyız
+//void main dışında tanımlı fonksiyon örneği (fonk1)
+fonk1(){
+  print("fonk1 sonucu");
+}
+void main() {
+ 
+  String boyaRengi = "mavi";
+  //var olan rengi söyleme için fonksiyon
+  rengiSoyle() {
+    print("boya rengi= " + boyaRengi);
+    //üsttekiyle aynı sonucu verir
+    print("boya rengi= $boyaRengi");
+  }
+
+  
+
+  // renk değerini değiştirmek için fonksiyon
+  rengiDegistir() {
+    boyaRengi = "yeşil";
+    //eğer aşağıdaki cod satırını eklemezsek renk değiştirme işlemini gerçekleştiremeyiz çünkü console bir değeri hafızasında tutamaz o yüzden çıktı ilk değer olan mavi olacaktır bunun önüne geçmek için yeni değeri yazdırmak üzere fonksiyona boya rengini tekrardan yazdırmalıyız
+    print("yeni boya rengi= " + boyaRengi);
+  }
+   rengiSoyle();
+  rengiDegistir();
+  //void main dışında tanımlı fonksiyon örneği (fonk1 ,fonk2)
+  fonk1();
+  fonk2();
+}
+//void main dışında tanımlı fonksiyon örneği (fonk2)
+
+fonk2(){
+  print("fonk2 sonucu ");
+}
