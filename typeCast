@@ -1,0 +1,53 @@
+void main() {
+  //int değişkeni normal diğer dillerinde olduğu gibi tanımlanır
+  //değişkenler aralarına virgül konularak da tanımlanabilir tanımlanmaz ise null degeri döndürür
+  int  sayi=0,sayi1=12 , sayi2=45 ;
+  int sayi3 = 4454;
+  print("sayi= $sayi");
+    print("sayi1= $sayi1");
+  print(" sayi2=$sayi2 sayi3= $sayi3");
+  // doouble ve var  da aynı şekilde
+  double sayi4 = 23.44;
+  double sayi5 = 232.4544511;
+  print("sayi5= $sayi5");
+  var sayi6 = 22343;
+  var sayi7 = 44.555;
+  print("sayi7 = $sayi7");
+
+  // eğer değiken değerimiz (tip ve değer olarak) sabit kalmayacaksa ve tekrar değiştirmeye ihtiyac duyma ihtimalimiz varsa  dynamic değişken tipini kullanırız bu
+  //bu değişken tipini tanımlarken değişkeni bir kez tanımlar sonrasında değişkeni değiştiririz
+  dynamic dinamic1 = 2;
+  print("dinamic= $dinamic1");
+  dinamic1 = "merve";
+  print("dinamic= $dinamic1");
+  dinamic1 = "55";
+  print("dinamic (string)= $dinamic1");
+  dinamic1 = 44.2;
+  print("dinamic= $dinamic1");
+  // NOT**dart dilinde eğer bir değişkenin tipi ve değeri biliniyorsa o değeri atanmamız tavsiye edilir
+  //var ve dynamic kullanışlı olsa fazla tavsiye edilmez çünkü tip dönüşümleri yapılırken hafızada kapladıkları yer ve değerler değişir
+//******TÜR DÖNÜŞÜMLERİ******
+  //PARSE : bir türü başka türe çeviririken kullanılır
+  String deger1 = "12.2";
+  print("deger1 (ilk)= $deger1");
+  //(string to double)
+  //String degeri double a çevirmek için başta double yazıp parse komutu içerisine değiştirmek istediğimiz değiken adını yazıyoruz
+  double.parse(deger1);
+  print("deger1= $deger1");
+
+// String to int
+  String deger2 = "175";
+  print("deger2(String)=$deger2");
+  int.parse(deger2);
+  print(deger2);
+  // double to String toString kullan
+  double deger3 = 12.098;
+  print("deger3 double= $deger3");
+  //NOT ** sayısal degerler striing ifadeler (+) operatörü yardımı ile birleştirilemez
+  print("deger3 string=" + deger3.toString());
+  //int to String
+  int deger4=23;
+  print("deger4 int degeri="+deger4.toString());
+  
+ ;
+}
