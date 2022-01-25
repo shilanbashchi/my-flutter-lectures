@@ -1,0 +1,31 @@
+void main() {
+  //değişkenlerde dartta önceden var olan tanımlı olan fonksiyon, sınıf ismi vs kullanılamaz.
+  //küçük harfle başlamalı
+  // sayı ile başlayamaz
+  //kurallar javaya benzer
+  //""içinde değişken başına "$"getirdiğimiz zaman değişken algılanır
+  //özel işaretler kullanılamaz
+  //değişken ismi birden fazla isim içeriyorsa kelimeler birleştirilerek yazılır
+  //türkçe karakterler kullanılmaz
+  String degisken1 = "merhaba";
+  String degisken2 = "nasılsın";
+  String degisken3 = " ";
+  print(degisken1 + degisken3 + degisken2);
+  print(degisken1 + " " + degisken2 + " 2.blok");
+  print("$degisken1");
+
+  //sayılar
+  //işlemler  javaya benzer mantıkla oluşturulur
+
+  int sayi1 = 72;
+  int sayi2 = 34;
+  // string ile int değerini yan yana yazacağın zaman int değişkeniinin başına "$"        işaretini getir
+  print("sayi1=" + "$sayi1");
+  print("sayı1 + sayı2=" + " $sayi1+$sayi2");
+  print(4);
+  print(2 + 3);
+  print(5 * 5);
+  print(7 / 9);
+  print(6 % 7);
+  print(6 - 9);
+}
